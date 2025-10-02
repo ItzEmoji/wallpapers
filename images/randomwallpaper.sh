@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIR="$HOME/wallpapers/"
+WALLPAPER_DIR="$HOME/wallpapers/images"
 CURRENT_WALL=$(hyprctl hyprpaper listloaded)
 # Get the name of the focused monitor with hyprctl
 FOCUSED_MONITOR=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name')
